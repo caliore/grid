@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+   
+}
+
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 5%;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr );
+    margin: 25px;
+    gap: 15px;
+    background-color: #deb887;
+    border-radius: 10px;
+    padding: 25px;
+    
+    border: 5px lightyellow double;
+    align-content: normal;
+    
+
+    
+
+
+}
+
+.grid-container > div {
+    border: 2px rgb(250, 203, 133)  groove;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+    background-color: #ecd0ad;
+
+    
+
+}
+
+
+
+@media (max-width: 720px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+
+footer {
+    background-color: #b87626;
+    text-align: center;
+   justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+   
+}
+
+a {
+    text-decoration: none;
+    
+
+}
+
+</style>
+
+
+
+</head>
+<body>
+    <div class="grid-container">
+
+        <div class="one" style="background-color:#f3d5b5">
+            <img src="img\dog.svg" alt="icon">
+            <h3>Adho Mukha Svanasana</h3>
+            <p>Adho Mukha Svanasana or Downward Facing Dog pose lengthens the spine, calms the mind, and helps relieve headache, insomnia, and fatigue. </p>
+        </div>
+        <div class="two" style="background-color: #e6ccb2">
+            <img src="img\tree.svg" alt="icon">
+            <h3>Vrikshasana</h3>
+            <p> Vrikshasana or Tree Pose is an excellent yoga pose to increase focus. It makes the legs strong, improves balance, and opens the hip. It also helps those suffering from sciatica.</p>
+        </div>
+        <div class="three" style="background-color:#f9dcc4">
+            <img src="img\chair.svg" alt="icon">
+            <h3>Utkatasana</h3>
+            <p>Utkatasana or Chair Pose strengthens the lower back and torso, balances the body, and brings determination. Know the steps of doing the posture, all its benefits, and contraindications</p>
+        </div>
+        <div class="four" style="background-color:#fec89a">
+            <img src="img\warrior.svg" alt="icon">
+            <h3>Virabhadrasana</h3>
+            <p>Virabhadrasana or Warrior Pose increases stamina, strengthens arms, and brings courage and grace. It is an excellent yoga pose for those in sedentary jobs. It is also very beneficial in the case of frozen shoulders. </p>
+        </div>
+
+    
+
+    </div>
+
+
+
+
+<footer>Sources: <a href="https://www.artofliving.org">The Art of Living</a>
+ <a href="https://www.reshot.com">Reshot</a>
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+* {
+    
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    height: 100vh;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+
+.grid-container {
+    width: min(75%, 70rem);
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    gap: 20px;
+   
+
+}
+
+.article{
+    padding: 15px;
+    border-radius: 10px;
+    text-align: justify;
+    display: grid;
+ 
+}
+
+.article:nth-child(1) {
+    background-color: #f4f1de;
+    grid-column: span 2;
+    align-content: start;
+    
+
+
+    
+}
+
+.article:nth-child(2) {
+    background-color: #e07a5f;
+}
+
+.article:nth-child(3) {
+    background-color: #3d405b;
+    grid-row: span 2;
+    align-content: center;
+    
+    
+}
+.article:nth-child(4) {
+    background-color: #81b29a;
+    
+}
+.article:nth-child(5) {
+    background-color: #f2cc8f;
+    grid-column: span 2;
+    align-content: start;
+    
+}
+
+
+@media (max-width: 720px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+.text::after {
+    content: ' Source: Samma Karuna';
+    font-size: 11px;
+    
+}
+
